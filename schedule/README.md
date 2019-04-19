@@ -1,6 +1,7 @@
-
 一.cron表达式
+
 	1.cron一般是6个部分或是7个部分：如下所示：
+	
 		1). Seconds （秒） 
 		2). Minutes （分） 
 		3). Hours （时） 
@@ -11,6 +12,7 @@
 
 
 	2.cron规则如下:
+	
 		1). Seconds (秒) ：可以用数字0－59 表示；
 		2). Minutes(分) ：可以用数字0－59 表示；
 		3). Hours(时) ：可以用数字0-23表示；
@@ -25,6 +27,7 @@
 		12). “*” 代表整个时间段。
 		
 二.@Schedule注解解释：
+
 	1.String cron() default ""; 
 		cron表达式
 	2.String zone() default "";
@@ -41,3 +44,5 @@
 		初始化的时候延迟多久执行
 	8.String initialDelayString() default "";
 		初始化的时候延迟多久执行
+		
+		
