@@ -28,6 +28,7 @@ public class TaskController {
     @GetMapping("/start")
     public void start()
     {
+        stopCron();
         task = threadPoolTaskScheduler.schedule(()->{
             logger.info("开始");
             try {
@@ -43,7 +44,7 @@ public class TaskController {
     }
 
     @GetMapping("/stop")
-    public void stopCron1()
+    public void stopCron()
     {
         if(task != null){
             logger.info("是否停止成功：{}",task.cancel(true));
